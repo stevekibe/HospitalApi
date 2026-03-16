@@ -1,0 +1,19 @@
+spring:
+  application:
+  name: hospitalApi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Hospital
+    username: steve
+    password: 'steve@me12'
+    driver-class-name: org.postgresql.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgresPlusDialect
+    properties:
+      hibernate:
+        format_sql: true
